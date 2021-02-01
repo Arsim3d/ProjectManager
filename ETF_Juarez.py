@@ -7,7 +7,7 @@ import plotly.graph_objects as go
 import matplotlib.pyplot as plt
 import sqlite3
 
-DATA_URL=('c:/python39/data/etf_sql.csv')
+DATA_URL=('data/etf_sql.csv')
 @st.cache(persist=True)
 def load_data():
     data=pd.read_csv(DATA_URL)
