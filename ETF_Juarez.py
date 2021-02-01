@@ -7,15 +7,6 @@ import plotly.graph_objects as go
 import matplotlib.pyplot as plt
 import sqlite3
 
-DATA_URL=('data/etf_sql.csv')
-@st.cache(persist=True)
-def load_data():
-    data=pd.read_csv(DATA_URL)
-    return data
-
-proyecto_data=load_data()
-
-
 st.title("GRAFICAS")
 st.markdown('El Tablero Presenta Información del Proyecto')
 st.sidebar.title("Status del Proyecto ETF Juárez")
